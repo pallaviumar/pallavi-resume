@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>LEBON</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            *{margin: 0px;
+                padding: 0px;
+                overflow-x: hidden;
+                box-sizing: border-box;}
+            div.nav-container{display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                background-size: 1200px 30px;
+                background-color: rgba(255,255,255,0.5);
+            }
+            li, a{font-family: monospace;
+                font-weight: 500px;
+                font-size: 16px;
+                color:black;
+                list-style: none;
+                text-decoration: none;}
+            .navbar li{display: inline-block;
+                padding: 0px 20px;
+            }
+            .navbar li a{transition: all 0.3s ease 0s;
+                text-align: center;}
+        
+            .paperbg{background-image: url(https://thumbs.dreamstime.com/b/high-quality-white-paper-texture-background-seamless-square-tile-ready-te-123487149.jpg);
+                background-repeat:no-repeat;
+                margin: 4px;
+                background-size: cover;}
+            .heading1{text-align: center;
+                margin: 15px;}
+            .libon{min-height:400px;
+                display:flex;
+                align-items: center;
+                justify-content: center;
+                background-image: url(https://img.freepik.com/free-photo/happy-boy-sitting-with-rabbit-hammock_23-2147924087.jpg?size=626&ext=jpg);
+                background-position: center;
+                background-size: 600px;
+                background-repeat: no-repeat;
+                color: rgba(255,0, 0, 0.6);
+                font-size: 150px;
+                font-family: monospace;
+                font-style: italic;}
+            .pointer-img{filter: grayscale(100%);
+                display: block;
+                margin-left: auto;
+                margin-right: auto;}
+            .arrow{text-align: center;
+                color: blue;} 
+            /*i{}*/
+            .heading-1{margin: 50px;}
+            .span1{color: #007FFF;}
+            .para{font-family: monospace;
+                font-size: 17px;}
+            .graphic-img{border-radius: 50%;
+                margin-left: 30px;
+                overflow-y: hidden;
+                margin-right: 30px;
+                float: left;
+                margin-right: 100px;}
+            .para-container{margin-left: 40%;
+                 } 
+            @media only screen and (max-width:600px) {
+                .heading-1{display: flex;
+                width: auto;}    
+            } 
+            .menu-content{text-align: center;
+                font-weight: bold;
+                color: #373737;}
+            .skill-container{color: #373737;}
+            .link1{color: deepskyblue;}
+            .gap{margin-bottom: 10px;}
+            .container{display: flex;
+                margin:20px;}
+            .poster-heading{display: flex;}
+            .animation{border-radius: 50%;
+                width: 170px;
+                height: 100px;
+                overflow-y: hidden;
+                filter: grayscale(100%);
+                margin-left: 3em;}
+            .margin{margin-left: 1em;}
+            .img-margin{margin-bottom: 1em;}
+            .animation:hover{opacity: 0.6;}
+            .background-img{background-color: rgba(243,222,223,0.3);}
+            .gallery-container{margin-left: 100px;}
+            .gallery{ margin: 5px;
+                display: block;
+                padding: 20px;
+                border: 1px solid #ccc;
+                float: left;
+                background-color: white;
+                width: 360px;}
+            @media only screen and (max-width: 600px) {
+                .gallery {width: 100%;}}
+                
+            div.img2 img{ width: 90%;
+                padding: 5px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: auto;}
+            p.imgabout{text-align: center;}
+            p.heading3{font-weight: 200px;
+                padding-bottom: 15px;
+                padding-top: 5px;
+                font-size: 20px;}
+            .spades{font-size: 24px;}
+            .upper-heading{padding: 2px;
+                margin: 10px;
+                border-radius: 10px;
+                background-color: rgba(200,172,169, 0.3);
+                border: 1px solid rgba(200,172,169, 0.3);
+                color: #373737;
+                left: 100%;
+                float: right;}  
+            .reload-button{background-color: #007FFF;
+                color: white;
+                padding: 5px 20px;
+                border-color: #007FFF;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 12px;
+                margin: 10px 10px;
+                cursor: pointer;
+                align-self: center;} 
+            .reverse{text-align: right;
+                font-size: 24px;
+                transform: scaleY(-1);}
+            .contact-bg{background-color: #333;
+                color: white;}
+            .phrase-1{font-size: 25px;
+                font-weight: 200px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                float: left;
+                line-height: 30px;
+                word-spacing: 2px;
+                width: 370px;
+                margin-top: 70px;
+                margin-left: 150px;
+                margin-right: 150px;}
+            .phrase-2{margin-top: 70px;
+                font-size:22;
+                margin-right:150px;
+                word-spacing: 2px;
+                line-height: 20px;}
+            .contact{font-size: 20px;
+                text-decoration: underline;
+                line-height: 50px;
+                word-spacing: 2px;
+                cursor: pointer;}
+            .to-top{color: white;
+                line-height: 100px;
+                display: flex;
+                justify-content: center;}
+            .fixed-img{height: 100px;
+                border-radius: 50%;
+                position: fixed;
+                bottom: 0px;
+                right: 0px;
+                opacity: 0.6;
+                width: 100px;}
+        </style>
+    </head>
+    <body>
+        
+        <div class="paperbg">
+            <div class="nav-container">
+                <nav class="navbar" >
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="heading1" id="back-to-top">
+                <p>Lebon Siu – Graphic Designer</p>
+            </div>
+            <div>
+                <p class="libon">Libon</p>
+            </div>
+            <img class="pointer-img" src="https://w0.peakpx.com/wallpaper/484/110/HD-wallpaper-bunny-lemoncake-cake-rabbit-food-daikichi-manga-yellow-lemon-cute-green-anime-bunny.jpg" width="120px" height="100px" align="center">
+            <!--pointer arrow-->
+            <div class="arrow">
+                <p>Enter the Rabbit Hole</p>
+                <a href="#content" style="cursor: pointer;" >&darr;</a>
+            </div><br><br><br>
+        </div><br><br><br>    
+        <!--<i>icon</i>-->
+        <!--Heading-1-->
+        <div class="heading-1" id="about">
+            <div class="graphic-img">
+                <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbAdDARd3BGF6QLIZA2-hZ_kiNYi7MfmSRdw&usqp=CAU" height="400" width="500">
+            </div>
+            <div class="para-container">
+                <div id="content">
+                    <h1>Hi! My name is<span class="span1"> Lebon Siu.</span><br>
+                    I’m a <span class="span1">graphic designer </span>based in <span class="span1">Vancouver.</span></h1>
+                </div><br>
+                <div>
+                    <p class="para">I design high-concept digital experiences for businesses, and bring a unique perspective to design through my background in film and video. I have had the privelage to work with clients such as Fairmont, BC Liquor, Vancouver is Awesome, and more.</p><br>
+                    <p class="para">Before I was a designer, I worked in music video production as a resident videographer and content creator. I’ve spent countless hours working with music video directors to help bring their stories to life, from designing their pitch decks, to filming on set, to editing their music videos.</p><br>
+                    <p class="para">Today, I bring my love of storytelling to design, and take influence in film, art, music and design. I believe in using the power of narrative to create emotional connections between business and consumer, and bring with me a multitude of technical skills that can elevate your projects above the rest.</p>
+                </div>
+            </div>
+        </div>
+        <hr style="border: 1px dotted gray; margin: 5em;">
+        <!--skills-->
+        <div class="menu-content" id="skills">
+            <h1>Skills</h1>
+        </div>    
+        <div class="gap container">
+            <div class="container1">
+                <!--html/css-->
+                <div class="poster-heading img-margin">
+                    <div class="animation">
+                       <img src="https://thumbs.dreamstime.com/b/html-css-code-developing-screenshot-76836093.jpg">
+                    </div>
+                    
+                    <div  class="gap margin">
+                        <h2 class="skill-container gap">HTML/CSS</h2>
+                        <p>With over four years of experience in front-end design, I use HTML/CSS to bring your businesses personality to the forefront, creating highly customized and immersive web experiences.</p>
+                    </div>
+                </div>
+                <!--Editing & motion graphic-->
+                <div class="poster-heading img-margin">
+                    <div class="animation">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd2vKxbQNP0luAHbcVNJ2rTq6_CG2QTrgWnQ&usqp=CAU">
+                    </div>
+
+                    <div  class="gap margin">
+                        <h2 class="skill-container gap">Editing & Motion Graphics</h2>
+                        <p>My background in videography means I'm proficient in video editing softwares such as Adobe Premiere, Adobe After Effects, and Final Cut Pro. On my free time, you'll find me brushing up on my <a href="" class="link1">motion graphic skills.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container2">
+                <!--Illustration-->
+                <div class="poster-heading img-margin">
+                    <div class="animation">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrKd_ZxGPWnAHBmkviE5QHqYtjcHzJceC9fw&usqp=CAU"></img>
+                    </div>   
+                    <div  class="gap margin">
+                        <h2 class="skill-container gap">Illustration</h2>
+                        <p>I am well-versed in all Adobe softwares such as XD, Photoshop and Illustrator, and often find myself combining my <a href="" class="link1">illustration skills</a> with design.</p>
+                    </div>
+                </div>
+                <!--Visual Builder & Platform-->
+                <div class="poster-heading img-margin">
+                    <div class="animation">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToPnPfhVsYntuvSzh2_YUGtl3c0w_JsBHU5A&usqp=CAU"></img>
+                    </div>
+                    <div  class="gap margin">
+                        <h2 class="skill-container gap">Visual Builders & Platforms</h2>
+                        <p>I am a quick learner when it comes to learning new platforms. I have experience in online visual builders such as Shopify, Unbounce, Ceros, WordPress, and Flexitive. I'm also currently learning webflow.</p>
+                    </div>
+                </div> 
+            </div>
+        </div><br><br><br>
+        <div class="background-img"><br><br><br>
+        <!--Portfolio-->
+            <div class="menu-content" id="portfolio">
+                <h1>Portfolio</h1>
+            </div>
+            <div style="text-align: center;">
+                <p>My design experience ranges from web design, branding, video, and more.</p>
+                <p>Take a more in-depth look at some of my favorite work.</p>
+            </div><br><br>
+            
+            <div class="gallery-container">
+                <!--Radical Blueberry-->
+                <div class="gallery">
+                    <div>
+                        <span class="spades">&#9824;</span>
+                        <div class="upper-heading"><p>Full Design & Development</p></div>
+                    </div>
+                    <div class="img2">
+                        <a target="_blank" href="https://www.behance.net/gallery/134159941/Radical-Blueberry">
+                            <img src="C:\Users\krishna\Pictures\img7.jpg" height="230px" width="300px">
+                        </a>
+                    </div>
+                    <div>
+                        <p class="imgabout heading3">Radical Blueberry</p>
+                        <p class="imgabout des">An environmentally concious blueberry farm out in Surrey. This project was the perfect marriage between graphic design and topics that I love.</p>
+                        <div style="text-align:center;">
+                            <button  class="reload-button" type="button">View On Behance</button>
+                        </div>
+                        <div class="reverse spades">&#9824;</div>
+                     </div>
+                </div>
+                <!--Quest Vitamins-->
+                <div class="gallery">
+                    <div>
+                        <div class="spades">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <div class="upper-heading"><p>Motion Design & Illustration</p></div>
+                    </div>
+                    <div class="img2">
+                        <a target="_blank" href="https://www.behance.net/gallery/134166987/Quest-Vitamin-Character-Design-Animation">
+                            <img src="C:\Users\krishna\Pictures\img.png" height="230px" width="300px">
+                        </a>
+                    </div>
+                    <div>
+                        <p class="imgabout heading3">Quest Vitamins</p>
+                        <p class="imgabout des">Animated custom character designs for Quest Vitamins. This video showcases my illustration skills as well as motion graphic skills.</p>
+                        <div style="text-align:center;">
+                            <button  class="reload-button" type="button">View On Behance</button>
+                        </div>
+                        <div class="reverse spades"><i class="fa fa-heart"></i></div>
+                     </div>
+                </div>
+                <!--Nettrux LLC-->
+                <div class="gallery">
+                    <div>
+                        <span class="spades">&#9824;</span>
+                        <div class="upper-heading"><p>UX/UI</p></div>
+                    </div>
+                    <div class="img2">
+                        <a target="_blank" href="https://www.behance.net/gallery/134169023/Nettrux-LLC">
+                            <img src="C:\Users\krishna\Pictures\img1.png" height="230px" width="300px">
+                        </a>
+                    </div>
+                    <div>
+                        <p class="imgabout heading3">Nettrux LLC</p>
+                        <p class="imgabout des">A website for a freight brokerage. This project was heavy on UX/UI design. I especially love the UI elements I developed.</p>
+                        <div style="text-align:center;">
+                            <button  class="reload-button" type="button">View On Behance</button>
+                        </div>
+                        <div class="reverse spades">&#9824;</div>
+                     </div>
+                </div>
+                <!--BC Liquor-->
+                <div class="gallery" style="float: left;">
+                    <div>
+                        <span class="spades">&#9824;</span>
+                        <div class="upper-heading"><p>Motion Design & Editing</p></div>
+                    </div>
+                    <div class="img2">
+                        <a target="_blank" href="https://www.behance.net/gallery/134161861/BC-Liquors-100th-Year-Anniversary">
+                            <img src="C:\Users\krishna\Pictures\img2.png" height="230px" width="300px">
+                        </a>
+                    </div>
+                    <div>
+                        <p class="imgabout heading3">BC Liquor</p>
+                        <p class="imgabout des">Motion graphic advertisements for BC Liquor. I was lucky to have been given free reign on art direction for these videos.</p>
+                        <div style="text-align:center;">
+                            <button  class="reload-button" type="button">View On Behance</button>
+                        </div>
+                        <div class="reverse spades">&#9824;</div>
+                    </div>
+                </div>
+                <!--Casa Corsi-->
+                <div class="gallery">
+                    <div>
+                        <span class="spades">&#9824;</span>
+                        <div class="upper-heading"><p>Full Design & Development</p></div>
+                    </div>
+                    <div class="img2">
+                        <a target="_blank" href="https://www.behance.net/gallery/134165401/Casa-Corsi">
+                            <img src="C:\Users\krishna\Pictures\img3.png" height="230px" width="300px">
+                        </a>
+                    </div>
+                    <div>
+                        <p class="imgabout heading3">Casa Corsi</p>
+                        <p class="imgabout des">An italian restaurant in North Vancouver. The client is really proud of their family/heritage and I wanted to reflect that in the website.</p>
+                        <div style="text-align:center;">
+                            <button  class="reload-button" type="button">View On Behance</button>
+                        </div>
+                        <div class="reverse spades">&#9824;</div>
+                     </div>
+                </div>
+                <!--Next Environmental-->
+                <div class="gallery">
+                    <div>
+                        <div class="spades">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <div class="upper-heading"><p>Print & Branding</p></div>
+                    </div>
+                    <div class="img2">
+                        <a target="_blank" href="https://www.behance.net/gallery/134170403/NEXT-Environmental-Branding">
+                            <img src="C:\Users\krishna\Pictures\img4.png" height="230px" width="300px">
+                        </a>
+                    </div>
+                    <div>
+                        <p class="imgabout heading3">Next Environmental</p>
+                        <p class="imgabout des">Complete rebrand for an environmental consultation company. This project was heavy on collaboration and included logo design and stationary design.</p>
+                        <div style="text-align:center;">
+                            <button  class="reload-button" type="button">View On Behance</button>
+                        </div>
+                        <div class="reverse spades"><i class="fa fa-heart"></i></div>
+                     </div>
+                </div>
+                <!--Social Artworks-->
+                <div class="gallery">
+                    <div>
+                        <span class="spades">&#9824;</span>
+                        <div class="upper-heading"><p>Marketing Collateral</p></div>
+                    </div>
+                    <div class="img2">
+                        <a target="_blank" href="https://www.behance.net/gallery/134991601/Social-Artwork-Selection">
+                            <img src="C:\Users\krishna\Pictures\img5.png" height="230px" width="300px">
+                        </a>
+                    </div>
+                    <div>
+                        <p class="imgabout heading3">Social Artworks</p>
+                        <p class="imgabout des">Take a look at some social artworks I’ve done in the past. I’ve done graphics for Instagram, Facebook, Twitter, and even LinkedIn.</p>
+                        <div style="text-align:center;">
+                            <button  class="reload-button" type="button">View On Behance</button>
+                        </div>
+                        <div class="reverse spades">&#9824;</div>
+                    </div>
+                </div>
+                <!--Vancouver is Awesome-->
+                <div class="gallery">
+                    <div>
+                        <span class="spades">&#9824;</span>
+                        <div class="upper-heading"><p>UX/UI</p></div>
+                    </div>
+                    <div class="img2">
+                        <a target="_blank" href="https://www.behance.net/gallery/134161523/Vancouver-Is-Awesome">
+                            <img src="C:\Users\krishna\Pictures\img6.png" height="230px" width="300px">
+                        </a>
+                    </div>
+                    <div>
+                        <p class="imgabout heading3">Vancouver is Awesome</p>
+                        <p class="imgabout des">A templated site I designed for a large scale media outlet. The template has since been adapted and used by other media outlets.</p>
+                        <div style="text-align:center;">
+                            <button  class="reload-button" type="button">View On Behance</button>
+                        </div>
+                        <div class="reverse spades">&#9824;</div>
+                    </div>
+                </div>
+                <!--Taranis Construction-->
+                <div class="gallery">
+                    <div>
+                        <span class="spades">&#9824;</span>
+                        <div class="upper-heading"><p>UX/UI</p></div>
+                    </div>
+                    <div class="img2">
+                        <a target="_blank" href="https://www.behance.net/gallery/134170781/Taranis-Construction-Logo-Design">
+                            <img src="C:\Users\krishna\Pictures\img7.png" height="230px" width="300px">
+                        </a>
+                    </div>
+                    <div>
+                        <p class="imgabout heading3">Taranis Construction</p>
+                        <p class="imgabout des">A construction company in Surrey. I played a part in every stage of this rebrand, from logo design to website development.</p>
+                        <div style="text-align:center;">
+                            <button  class="reload-button" type="button">View On Behance</button>
+                        </div>
+                        <div class="reverse spades">&#9824;</div>
+                    </div>
+                </div>  
+            </div>
+            <br><br>
+            <!--contact-->
+            <div class="contact-bg" id="contact">
+                <div class="phrase-1">
+                    <p>You can’t leave a tea party
+                        <span style="display: block;"> without a cup of tea, you know?</span></p>
+                </div>
+                <div class="phrase-2">
+                    <p>Leaving so soon? I feel like we’ve barely scratched the surface! I haven’t had a chance to tell you about my smokey bear obsession, my love for poutine, or my bad genre film collection!<br><br>
+
+                        If you have a project for me or simply want to get to know me better, why don’t you invite me out for a cup of tea?</p><br><br>
+                    <div class="contact">
+                        <p>hello@lebonsiu.com</p>
+                        <p>LinkedIn</p>
+                        <p>Behance</p>
+                    </div>
+                </div>
+                <img class="fixed-img" src="https://cdn.w600.comps.canstockphoto.com/blue-envelope-eps-vector_csp3777404.jpg">
+                <div><a class="to-top" href="#back-to-top">Copyright ©2022 Lebon Siu. Back to Top ↑</p></div>
+            </div>
+    </div>
+    </body>
+</html>
